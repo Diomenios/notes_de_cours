@@ -13,7 +13,7 @@ Avantages de la notion de **zone régulière** : réduire le nombre de messages 
 *****
 **attention :** Même si on a plusieurs zones différentes dans une config OSPF, il faut utiliser le même numéro de process OSPF dans chacune des zones.
 *****
-la command : *area 2* $\rightarrow$ permet de déclarer l'area 2 comme étant une area standart.  
+la command : *area 2* $\rightarrow$ permet de déclarer l'area 2 comme étant une area standart.
 
 Définir l'adresse ip d'un routeur sur une area permet de bien indiquer qu'il se trouve dans une area particulière.  Ceci ne doit être fait que sur les routeurs se trouvant entre 2 zones(voir slide 21).
 
@@ -23,7 +23,7 @@ la commande : *redistribute static subnet* $\rightarrow$ redistribue les routes 
 
 la commande : *redistribute connected subnet* $\rightarrow$ redistribue les réseaux connectés aux voisins, dans un cas où on ne respecte pas les classes.
 
-la commande : *cummary address 10.10.2.0 255.255.255.248* $\rightarrow$ n'utilise plus le wildcart, mais bien le masque du réseau pour fonctionner correctement.
+la commande : *summary address 10.10.2.0 255.255.255.248* $\rightarrow$ n'utilise plus le wildcart, mais bien le masque du réseau pour fonctionner correctement.
 
 la commance : *default-information originate [always]* $\rightarrow$ la route ne tombera pas, elle sera toujours annoncée, même si la route physique est tombée.  En gros, cela permet de ne jamais changer notre plan d'adressage.
 
